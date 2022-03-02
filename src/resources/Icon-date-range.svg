@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.4" height="18.222" viewBox="0 0 16.4 18.222">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0e0e0e;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-date-range" data-name="Icon material-date-range" class="cls-1" d="M9.967,11.2H8.144v1.822H9.967Zm3.644,0H11.789v1.822h1.822Zm3.644,0H15.433v1.822h1.822Zm1.822-6.378h-.911V3H16.344V4.822H9.056V3H7.233V4.822H6.322A1.814,1.814,0,0,0,4.509,6.644L4.5,19.4a1.822,1.822,0,0,0,1.822,1.822H19.078A1.828,1.828,0,0,0,20.9,19.4V6.644A1.828,1.828,0,0,0,19.078,4.822Zm0,14.578H6.322V9.378H19.078Z" transform="translate(-4.5 -3)"/>
+</svg>

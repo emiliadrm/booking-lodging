@@ -1,4 +1,4 @@
-import iconDelete from "";
+import iconDelete from ".../";
 
 export default function FilterClean() {
 //Colocar en el on click una funcion que devuelta el estado original de los estados del filtro

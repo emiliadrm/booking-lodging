@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f93939;
+      }
+
+      .cls-2 {
+        fill: #fab0b0;
+      }
+    </style>
+  </defs>
+  <g id="Grupo_14" data-name="Grupo 14" transform="translate(-2502 -205.35)">
+    <circle id="Elipse_1" data-name="Elipse 1" class="cls-1" cx="15.5" cy="15.5" r="15.5" transform="translate(2502 205.35)"/>
+    <path id="Icon_material-delete" data-name="Icon material-delete" class="cls-2" d="M8.362,18.289a1.729,1.729,0,0,0,1.724,1.724H16.98A1.729,1.729,0,0,0,18.7,18.289V7.947H8.362Zm11.2-12.927H16.549L15.687,4.5H11.378l-.862.862H7.5V7.085H19.565Z" transform="translate(2503.692 208.869)"/>
+  </g>
+</svg>
