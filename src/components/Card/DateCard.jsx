@@ -1,5 +1,5 @@
 import React from "react";
-import iconDate from "./resources/Icon-date-range.svg";
+import iconDate from "../../resources/Icon-date-range.svg";
 
 export default function DateCard() {
     // Deberia haber una funcion que muestre la disponibilidad que tiene el lugar seleccionado

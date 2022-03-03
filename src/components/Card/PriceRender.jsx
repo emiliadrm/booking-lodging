@@ -1,5 +1,5 @@
-import iconDolarEmpty from "./resources/Icon-dollar-sign-unk.svg";
-import iconDolarFull from "./resources/Icon-dollar-sign-full.svg";
+import iconDolarEmpty from "../../resources/Icon-dollar-sign-unk.svg";
+import iconDolarFull from "../../resources/Icon-dollar-sign-full.svg";
 
 export default function PriceRender(props) {
     if (props === 1) {

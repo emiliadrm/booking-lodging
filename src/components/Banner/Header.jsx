@@ -1,4 +1,7 @@
-export function Header() {
+import bannerImg from "../../resources/BannerImage.jpg";
+import logo from "../../resources/logo.svg";
+
+export default function Header() {
   return (
     <>
       <HeaderBar/>

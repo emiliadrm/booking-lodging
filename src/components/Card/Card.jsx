@@ -1,12 +1,12 @@
 import React from "react";
-import iconDate from "./resources/Icon-date-range.svg";
-import iconBed from "./resources/Icon-bed.svg";
-import iconLocation from "./resources/Icon-location-on.svg";
+import iconDate from "../../resources/Icon-date-range.svg";
+import iconBed from "../../resources/Icon-bed.svg";
+import iconLocation from "../../resources/Icon-location-on.svg";
 import ButtonCard from "./ButtonCard";
 import PriceRender from "./PriceRender";
 import DateCard from "./DateCard";
 
-export function Card({ name, city, country, rooms, description, price, photo, date}) {
+export default function Card({ name, city, country, rooms, description, price, photo, date}) {
 
   return (
     <>

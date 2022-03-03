@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { hotelsData } from "./data";
-import { AppContext } from "./context/AppProvider";
+import AppContext from "./context/AppProvider";
 import "./styles.css";
 
 import Header from "./components/Banner/Header";
@@ -10,7 +10,7 @@ import Card from "./components/Card/Card";
 
 export default function App() {
 
- const { locateCountry, roomSize, priceCost } = useContext(AppContext);
+ const { roomSize, priceCost, locateCountry} = useContext(AppContext);
 
  // FUNCION QUE filtra por opciones
   const crearLista = () => {

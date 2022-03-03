@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AppContext } from "./context/AppProvider";
+import AppContext from "../../context/AppProvider";
 
 export function ShowFilterSelection() {
   const { priceCost, roomSize, locateCountry } = useContext(AppContext);
