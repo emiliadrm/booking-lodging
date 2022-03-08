@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { hotelsData } from "./data";
-import AppContext from "./context/AppProvider";
+import { AppContext }  from "./context/AppProvider";
 import "./styles.css";
 
 import Header from "./components/Banner/Header";

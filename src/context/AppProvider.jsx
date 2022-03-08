@@ -32,4 +32,3 @@ export default function AppProvider(props){
      </AppContext.Provider>
     )
 }
-

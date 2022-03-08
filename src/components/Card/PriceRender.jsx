@@ -42,4 +42,5 @@ export default function PriceRender(props) {
         </div>
       );
     }
+    return null;
   }
