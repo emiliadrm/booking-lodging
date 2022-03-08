@@ -75,6 +75,8 @@ export default function App() {
                 city={hotelData.city}
                 country={hotelData.country}
                 price={hotelData.price}
+                dateTo={hotelData.availabilityTo}
+                dateFrom={hotelData.availabilityFrom}
               />
             );
           })

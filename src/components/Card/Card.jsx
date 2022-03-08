@@ -6,7 +6,7 @@ import ButtonCard from "./ButtonCard";
 import PriceRender from "./PriceRender";
 import DateCard from "./DateCard";
 
-export default function Card({ name, city, country, rooms, description, price, photo, date}) {
+export default function Card({ name, city, country, rooms, description, price, photo, dateTo, dateFrom}) {
 
   return (
     <>
@@ -19,7 +19,7 @@ export default function Card({ name, city, country, rooms, description, price, p
           </div>
           <div className="componentTextCardStyle">
             <img src={iconDate} alt="" />
-            <DateCard props={date}/>                                            {/*Aqui va una funcion que de la fecha en string*/}
+            <DateCard dateTo={dateTo} dateFrom={dateFrom}/>                                            {/*Aqui va una funcion que de la fecha en string*/}
           </div>
           <div className="componentTextCardStyle">
             <img src={iconBed} alt="" />
