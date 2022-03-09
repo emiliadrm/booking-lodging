@@ -14,9 +14,9 @@ export default function FilterDate(){
     setArrivalDate(arrivalDate);
   };
 
+  // ME MUESTRA LAS FECHAS DEL INPUT
   console.log('FECHAS SALIDA', departureDate);
   console.log('FECHAS LLEGADA', arrivalDate);
-
 
   return (
     <>

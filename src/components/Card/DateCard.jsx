@@ -24,7 +24,6 @@ export default function DateCard({ dateTo, dateFrom }) {
     const dayDate = fechaTemporal.getDate();
     const yearDate = fechaTemporal.getFullYear();
 
-    //console.log(fechaTemporal.toISOString(), 'PRUEBA');
     return `${dayDate} ${monthString[monthDate]} ${yearDate}`
   }
    
@@ -36,11 +35,17 @@ export default function DateCard({ dateTo, dateFrom }) {
     return `${dayDate} ${monthString[monthDate]}`
   }
 
-  
+  //console.log(dateFrom, 'FROM', dateTo, 'TO');
+  //console.log(fechaPrueba.toISOString().split('T')[0], 'TEST');
   return (
-    <div className="componentTextCardStyle">
       <h3 className="marginTextCardStyle">{showDateFrom(dateFrom)} - {showStringDate(dateTo)}</h3>
-    </div>
   );
 }
-  
+
+
+/*const fechaPrueba = new Date();
+  const getYear1 = fechaPrueba.getFullYear();
+  const getMonth1 = fechaPrueba.getMonth();
+  const getDate1 = fechaPrueba.getDate();
+  const putZero = () => {prop == '1' return 0+'1'}
+  console.log(`${getYear1}-${getMonth1}-${getDate1}`);*/

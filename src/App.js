@@ -10,7 +10,14 @@ import Card from "./components/Card/Card";
 
 export default function App() {
 
- const { roomSize, priceCost, locateCountry} = useContext(AppContext);
+ const { roomSize, priceCost, locateCountry, departureDate, arrivalDate} = useContext(AppContext);
+
+  const todayDateU = new Date()
+  const arrivalDateUnix = new Date(arrivalDate).setTime(todayDateU);
+  const aUnix = arrivalDateUnix.valueOf();
+  const departureDateUnix = new Date(departureDate).setTime(todayDateU);
+  const dUnix = departureDateUnix.valueOf();
+  console.log(aUnix, 'ARRI', dUnix, 'DEP');
 
  // FUNCION QUE filtra por opciones
   const crearLista = () => {
@@ -47,8 +54,10 @@ export default function App() {
         return true;
       })
       .filter((hotelData) => {
-        // filtro de fecha
-        return hotelData;
+        if (aUnix >= hotelData.availabilityFrom && dUnix <= hotelData.availabilityTo){
+          return aUnix >= hotelData.availabilityFrom && dUnix <= hotelData.availabilityTo;
+        }
+        return true;
       })
       .filter((hotelData) => {
         return true;
