@@ -13,11 +13,9 @@ export default function App() {
  const { roomSize, priceCost, locateCountry, departureDate, arrivalDate} = useContext(AppContext);
 
   const todayDateU = new Date()
-  const arrivalDateUnix = new Date(arrivalDate).setTime(todayDateU);
-  const aUnix = arrivalDateUnix.valueOf();
-  const departureDateUnix = new Date(departureDate).setTime(todayDateU);
-  const dUnix = departureDateUnix.valueOf();
-  console.log(aUnix, 'ARRI', dUnix, 'DEP');
+  const arrivalDateUnix = new Date(arrivalDate).setTime(todayDateU).valueOf();
+  const departureDateUnix = new Date(departureDate).setTime(todayDateU).valueOf();
+  //console.log(aUnix, 'ARRI', dUnix, 'DEP');
 
  // FUNCION QUE filtra por opciones
   const crearLista = () => {
@@ -54,8 +52,8 @@ export default function App() {
         return true;
       })
       .filter((hotelData) => {
-        if (aUnix >= hotelData.availabilityFrom && dUnix <= hotelData.availabilityTo){
-          return aUnix >= hotelData.availabilityFrom && dUnix <= hotelData.availabilityTo;
+        if (arrivalDateUnix >= hotelData.availabilityFrom && departureDateUnix <= hotelData.availabilityTo){
+          return arrivalDateUnix >= hotelData.availabilityFrom && departureDateUnix <= hotelData.availabilityTo;
         }
         return true;
       })
