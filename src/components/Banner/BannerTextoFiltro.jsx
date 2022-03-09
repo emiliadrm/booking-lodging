@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context/AppProvider";
 
-export function ShowFilterSelection() {
-  const { priceCost, roomSize, locateCountry } = useContext(AppContext);
+export default function BannerTextoFiltro() {
+  const { priceCost, roomSize, locateCountry, arrivalDate, departureDate } = useContext(AppContext);
   
   const showPrices = (price) => {
     if (price === "LUJ") {
@@ -37,10 +37,28 @@ export function ShowFilterSelection() {
     return `En cualquier lugar`;
   };
 
+  const showDateFrom = (dateFrom) => {
+    const fechaHoy = new Date(dateFrom);
+    const monthDate = fechaHoy.getMonth();
+    const dayDate = fechaHoy.getDate();
+    const yearDate = fechaHoy.getFullYear();
+
+    return `${dayString[dayDate]}, ${dayDate} de ${monthString[monthDate]} de ${yearDate}`
+  }
+  
+  const showDateTo = (dateTo) =>{ 
+    const fechaTemporal = new Date(dateTo)
+    const monthDate = fechaTemporal.getMonth();
+    const dayDate = fechaTemporal.getDate();
+    const yearDate = fechaTemporal.getFullYear();
+
+    return `${dayString[dayDate]}, ${dayDate} de ${monthString[monthDate]} de ${yearDate}`
+  }
+
   return (
     <>
       <div className="selectTextContainer">
-        <p>Desde el martes, 1 de enero de 2019 hasta el miércoles, 2 de enero de 2019</p>
+        <p>Desde el {showDateFrom(arrivalDate)} hasta {showDateTo(departureDate)}</p>
         <p>{showCountries(locateCountry)}</p>
         <p>{showPrices(priceCost)}</p>
         <p>{showRoomsSizes(roomSize)}</p>
@@ -48,3 +66,28 @@ export function ShowFilterSelection() {
     </>
   );
 }
+
+const monthString = [
+  'Enero',
+  'Febrero',
+  'Marzo',
+  'Abril',
+  'Mayo',
+  'Junio',
+  'Julio',
+  'Agosto',
+  'Septiembre',
+  'Octubre',
+  'Noviembre',
+  'Diciembre'
+];
+
+const dayString = [
+  'Lunes',
+  'Martes',
+  'Miercoles',
+  'Jueves',
+  'Viernes',
+  'Sabado',
+  'Domingo'
+];

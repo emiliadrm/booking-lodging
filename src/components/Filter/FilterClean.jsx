@@ -1,11 +1,18 @@
+import React, { useContext} from "react";
 import iconDelete from "../../resources/Icon-delete.svg";
+import { AppContext } from "../../context/AppProvider";
 
 export default function FilterClean() {
 //Colocar en el on click una funcion que devuelta el estado original de los estados del filtro
+  const { arrivalDate, locateCountry, departureDate, roomSize, priceCost } = useContext(AppContext);
 
-    const borrarFiltro = () => {
-        return console.log('delete')
-    }
+  const borrarFiltro = () => {
+    arrivalDate("");
+    departureDate("");
+    locateCountry("todos");
+    roomSize("todos");
+    priceCost("todos");
+  }
 
 return(
         <>

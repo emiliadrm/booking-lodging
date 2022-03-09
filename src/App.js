@@ -12,9 +12,8 @@ export default function App() {
 
  const { roomSize, priceCost, locateCountry, departureDate, arrivalDate} = useContext(AppContext);
 
-  const todayDateU = new Date()
-  const arrivalDateUnix = new Date(arrivalDate).setTime(todayDateU).valueOf();
-  const departureDateUnix = new Date(departureDate).setTime(todayDateU).valueOf();
+  const arrivalDateUnix = arrivalDate === '' ? null : new Date(arrivalDate).valueOf();
+  const departureDateUnix = departureDate === '' ? null :new Date(departureDate).valueOf();
   //console.log(aUnix, 'ARRI', dUnix, 'DEP');
 
  // FUNCION QUE filtra por opciones
@@ -50,14 +49,10 @@ export default function App() {
           return hotelData.price >= 0 && hotelData.price <= 2;
         }
         return true;
-      })
-      .filter((hotelData) => {
-        if (arrivalDateUnix >= hotelData.availabilityFrom && departureDateUnix <= hotelData.availabilityTo){
+      }).filter((hotelData) => {
+        if (arrivalDateUnix !== null && departureDateUnix !== null) {
           return arrivalDateUnix >= hotelData.availabilityFrom && departureDateUnix <= hotelData.availabilityTo;
         }
-        return true;
-      })
-      .filter((hotelData) => {
         return true;
       });
 
@@ -70,8 +65,8 @@ export default function App() {
   const HotelesCards = () => {
     return(
       <div className="c0ntainer">
-        {
-          listaFiltrada.map((hotelData, index) => {
+        {listaFiltrada.length === 0 ? (<><h1>Lo siento no hay un resultado que coincida con tu búsqueda</h1></>) :
+        (listaFiltrada.map((hotelData, index) => {
             return (
               <Card
                 key={index}
@@ -84,10 +79,10 @@ export default function App() {
                 price={hotelData.price}
                 dateTo={hotelData.availabilityTo}
                 dateFrom={hotelData.availabilityFrom}
-              />
-            );
-          })
-        }
+              />);
+            })
+          )
+        }  
       </div>
     )
   };

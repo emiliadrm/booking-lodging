@@ -1,11 +1,15 @@
 import bannerImg from "../../resources/BannerImage.jpg";
 import logo from "../../resources/logo.svg";
 
+import BannerTextoFiltro from "./BannerTextoFiltro";
+
 export default function Header() {
   return (
     <>
       <HeaderBar/>
-      <div className="barFiltroCenter" style={{ backgroundImage: `url(${bannerImg})` }}></div>
+      <div className="barFiltroCenter" style={{ backgroundImage: `url(${bannerImg})` }}>
+        <BannerTextoFiltro/>
+      </div>
     </>
   )
 }

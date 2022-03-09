@@ -34,7 +34,7 @@ export default function Card({ name, city, country, rooms, description, price, p
             <img className="photoStyle" width="300px" src={photo} alt={name} /> {/*Foto*/}
           </div>
           <div className="containerPriceButton">
-            <div><h4 className="priceTittleName">Precio:</h4><PriceRender props={price}/></div> {/*Precio*/}
+            <div><h4 className="priceTittleName">Precio:</h4><PriceRender price={price}/></div> {/*Precio*/}
             <ButtonCard/>
           </div>
         </div>

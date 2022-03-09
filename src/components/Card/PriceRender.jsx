@@ -1,8 +1,8 @@
 import iconDolarEmpty from "../../resources/Icon-dollar-sign-unk.svg";
 import iconDolarFull from "../../resources/Icon-dollar-sign-full.svg";
 
-export default function PriceRender(props) {
-    if (props === 1) {
+export default function PriceRender({ price }) {
+    if (price === 1) {
       return (
         <div className="priceDrawingComponent">
           <img src={iconDolarFull} alt="" />
@@ -12,7 +12,7 @@ export default function PriceRender(props) {
         </div>
       );
     }
-    if (props === 2) {
+    if (price === 2) {
       return (
         <div className="priceDrawingComponent">
           <img src={iconDolarFull} alt="" />
@@ -22,7 +22,7 @@ export default function PriceRender(props) {
         </div>
       );
     }
-    if (props === 3) {
+    if (price === 3) {
       return (
         <div className="priceDrawingComponent">
           <img src={iconDolarFull} alt="" />
@@ -32,7 +32,7 @@ export default function PriceRender(props) {
         </div>
       );
     }
-    if (props === 4) {
+    if (price === 4) {
       return (
         <div className="priceDrawingComponent">
           <img src={iconDolarFull} alt="" />
