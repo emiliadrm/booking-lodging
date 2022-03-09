@@ -6,13 +6,15 @@ import FilterClean from "./FilterClean";
 
 export default function Filter() {
   return (
-    <form className="barFiltroComponentStyle">
-      <FilterLocation />
-      <FilterDate />
-      <FilterRoom />
-      <FilterPrice />
-      <FilterClean />
-    </form>
+    <div className="FilterBox">
+       <form className="barFiltroComponentStyle">
+        <FilterLocation />
+        <FilterDate />
+        <FilterRoom />
+        <FilterPrice />
+        <FilterClean />
+      </form>
+    </div>
   );
 }
   

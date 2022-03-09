@@ -6,15 +6,13 @@ import "./styles.css";
 import Header from "./components/Banner/Header";
 import Filter from "./components/Filter/Filter";
 import Card from "./components/Card/Card";
+import NotResult from "./NotResult";
 
 
 export default function App() {
-
- const { roomSize, priceCost, locateCountry, departureDate, arrivalDate} = useContext(AppContext);
-
+  const { roomSize, priceCost, locateCountry, departureDate, arrivalDate} = useContext(AppContext);
   const arrivalDateUnix = arrivalDate === '' ? null : new Date(arrivalDate).valueOf();
   const departureDateUnix = departureDate === '' ? null :new Date(departureDate).valueOf();
-  //console.log(aUnix, 'ARRI', dUnix, 'DEP');
 
  // FUNCION QUE filtra por opciones
   const crearLista = () => {
@@ -65,7 +63,7 @@ export default function App() {
   const HotelesCards = () => {
     return(
       <div className="c0ntainer">
-        {listaFiltrada.length === 0 ? (<><h1>Lo siento no hay un resultado que coincida con tu búsqueda</h1></>) :
+        {listaFiltrada.length === 0 ? (<><NotResult/></>) :
         (listaFiltrada.map((hotelData, index) => {
             return (
               <Card

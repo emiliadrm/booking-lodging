@@ -37,28 +37,30 @@ export default function BannerTextoFiltro() {
     return `En cualquier lugar`;
   };
 
-  const showDateFrom = (dateFrom) => {
-    const fechaHoy = new Date(dateFrom);
-    const monthDate = fechaHoy.getMonth();
-    const dayDate = fechaHoy.getDate();
-    const yearDate = fechaHoy.getFullYear();
+  const showDates = (dateFrom, dateTo) => {
+    if( dateFrom !== '' & dateTo !== '') {
+      // Fecha DESDE
+      const fechaFrom = new Date(dateFrom);
+      const monthDate = fechaFrom.getMonth();
+      const dayDate = fechaFrom.getDate();
+      const dayStringFrom = fechaFrom.getDay();
+      const yearDate = fechaFrom.getFullYear();
+      // fecha HASTA
+      const fechaTo = new Date(dateTo)
+      const monthDateTo = fechaTo.getMonth();
+      const dayDateTo = fechaTo.getDate();
+      const dayStringTo = fechaTo.getDay();
+      const yearDateTo = fechaTo.getFullYear();
 
-    return `${dayString[dayDate]}, ${dayDate} de ${monthString[monthDate]} de ${yearDate}`
+      return `Desde el ${dayString[dayStringFrom]}, ${dayDate} de ${monthString[monthDate]} de ${yearDate} hasta ${dayString[dayStringTo]}, ${dayDateTo} de ${monthString[monthDateTo]} de ${yearDateTo}`
+    }
+    return `En cualquier momento`
   }
   
-  const showDateTo = (dateTo) =>{ 
-    const fechaTemporal = new Date(dateTo)
-    const monthDate = fechaTemporal.getMonth();
-    const dayDate = fechaTemporal.getDate();
-    const yearDate = fechaTemporal.getFullYear();
-
-    return `${dayString[dayDate]}, ${dayDate} de ${monthString[monthDate]} de ${yearDate}`
-  }
-
   return (
     <>
       <div className="selectTextContainer">
-        <p>Desde el {showDateFrom(arrivalDate)} hasta {showDateTo(departureDate)}</p>
+        <p>{showDates(arrivalDate, departureDate)}</p>
         <p>{showCountries(locateCountry)}</p>
         <p>{showPrices(priceCost)}</p>
         <p>{showRoomsSizes(roomSize)}</p>

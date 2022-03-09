@@ -41,11 +41,3 @@ export default function DateCard({ dateTo, dateFrom }) {
       <h3 className="marginTextCardStyle">{showDateFrom(dateFrom)} - {showStringDate(dateTo)}</h3>
   );
 }
-
-
-/*const fechaPrueba = new Date();
-  const getYear1 = fechaPrueba.getFullYear();
-  const getMonth1 = fechaPrueba.getMonth();
-  const getDate1 = fechaPrueba.getDate();
-  const putZero = () => {prop == '1' return 0+'1'}
-  console.log(`${getYear1}-${getMonth1}-${getDate1}`);*/

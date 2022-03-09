@@ -7,8 +7,8 @@ export default function FilterClean() {
   const { arrivalDate, locateCountry, departureDate, roomSize, priceCost } = useContext(AppContext);
 
   const borrarFiltro = () => {
-    arrivalDate("");
-    departureDate("");
+    arrivalDate('');
+    departureDate('');
     locateCountry("todos");
     roomSize("todos");
     priceCost("todos");
