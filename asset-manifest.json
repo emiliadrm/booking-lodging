@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/booking-lodging/static/css/main.34f80e31.css",
+    "main.js": "/booking-lodging/static/js/main.7a8018ec.js",
+    "static/js/787.817bcfb0.chunk.js": "/booking-lodging/static/js/787.817bcfb0.chunk.js",
+    "static/media/BannerImage.jpg": "/booking-lodging/static/media/BannerImage.851d3d3b1f4955547e56.jpg",
+    "static/media/rincon-del-socorro.jpg": "/booking-lodging/static/media/rincon-del-socorro.98161c620c451368883d.jpg",
+    "static/media/la-bamba-de-areco.jpg": "/booking-lodging/static/media/la-bamba-de-areco.0ccacda078605df6edc5.jpg",
+    "static/media/uxua-casa.jpg": "/booking-lodging/static/media/uxua-casa.ebf46cc5d073e16e61a7.jpg",
+    "static/media/campo-tinto.jpg": "/booking-lodging/static/media/campo-tinto.f27bca759c64e2e2e994.jpg",
+    "static/media/vira-vira.jpg": "/booking-lodging/static/media/vira-vira.17468e7f5cfa9d386003.jpg",
+    "static/media/vila-da-santa.jpg": "/booking-lodging/static/media/vila-da-santa.a64e91d243a63f6299fe.jpg",
+    "static/media/casa-turquesa.jpg": "/booking-lodging/static/media/casa-turquesa.8e9179ce5987a2083cc6.jpg",
+    "static/media/ponta-dos-ganchos.jpg": "/booking-lodging/static/media/ponta-dos-ganchos.8ebdf1b2b535d54998aa.jpg",
+    "static/media/luma-casa-de-montana.jpg": "/booking-lodging/static/media/luma-casa-de-montana.0501710d7c49561ceb51.jpg",
+    "static/media/casa-higueras.jpg": "/booking-lodging/static/media/casa-higueras.0c6c743338f8c54d4796.jpg",
+    "static/media/entre-cielos.jpg": "/booking-lodging/static/media/entre-cielos.671c5a2679a35e4104f2.jpg",
+    "static/media/alto-atacama.jpg": "/booking-lodging/static/media/alto-atacama.a6846d24d653434bd034.jpg",
+    "static/media/azur-real.jpg": "/booking-lodging/static/media/azur-real.9a591fc1e831eae938fc.jpg",
+    "static/media/tierra-patagonia.jpg": "/booking-lodging/static/media/tierra-patagonia.aad2b0114e90b39f8f2a.jpg",
+    "static/media/merced-del-alto.jpg": "/booking-lodging/static/media/merced-del-alto.3daaee165f387c375e32.jpg",
+    "static/media/huacalera.jpg": "/booking-lodging/static/media/huacalera.7542bc14e782027477b5.jpg",
+    "static/media/sainte-jeanne.jpg": "/booking-lodging/static/media/sainte-jeanne.4ff84aba85e8fc558901.jpg",
+    "static/media/vik-chile.jpg": "/booking-lodging/static/media/vik-chile.341113d7fb0348c77302.jpg",
+    "static/media/noresult.svg": "/booking-lodging/static/media/noresult.ba82c47e0c78d644c16ba67c0fe27191.svg",
+    "static/media/logo.svg": "/booking-lodging/static/media/logo.bb529802c5ab1037eca4cf0d8a56e7a0.svg",
+    "static/media/Icon-dollar-sign-unk.svg": "/booking-lodging/static/media/Icon-dollar-sign-unk.a25ca24b0e955fcaf7eff356a39acef7.svg",
+    "static/media/Icon-dollar-sign-full.svg": "/booking-lodging/static/media/Icon-dollar-sign-full.c20ca6c5081a3d5b6d5bf4bc6df7c164.svg",
+    "static/media/Icon-delete.svg": "/booking-lodging/static/media/Icon-delete.556cc34bf2d4f16abfe0faf203a7e293.svg",
+    "index.html": "/booking-lodging/index.html",
+    "static/media/Icon-date-range.svg": "/booking-lodging/static/media/Icon-date-range.3bdbbbb1c3de0fdbbe2db812cf452bff.svg",
+    "static/media/Icon-bed.svg": "/booking-lodging/static/media/Icon-bed.cceab49dcb230eb3c50ba753cb0c81e8.svg",
+    "static/media/Icon-location-on.svg": "/booking-lodging/static/media/Icon-location-on.09d4d7fb1fc07e048ee6aecd533fbddc.svg",
+    "main.34f80e31.css.map": "/booking-lodging/static/css/main.34f80e31.css.map",
+    "main.7a8018ec.js.map": "/booking-lodging/static/js/main.7a8018ec.js.map",
+    "787.817bcfb0.chunk.js.map": "/booking-lodging/static/js/787.817bcfb0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34f80e31.css",
+    "static/js/main.7a8018ec.js"
+  ]
+}
